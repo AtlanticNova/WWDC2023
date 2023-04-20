@@ -9,7 +9,6 @@ import Foundation
 import AVKit
 
 final class Audio: ObservableObject {
-//    static let shared = Audio()
     
     var player: AVAudioPlayer?
     

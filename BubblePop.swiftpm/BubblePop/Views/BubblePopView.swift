@@ -111,11 +111,7 @@ struct BubblePopView: View {
             .padding(30)
         }
         .onAppear{
-//            Audio.shared.startMusic(track: bubblePopVM.bubblePop.track, isPreview: isPreview)
             audio.startMusic(track: bubblePopVM.bubblePop.track, isPreview: isPreview)
-        }
-        .onTapGesture {
-            audio.startMusic(track: bubblePopVM.bubblePop.effect, isPreview: isPreview)
         }
         .onReceive(timer) { _ in
             guard let player = audio.player, !isEditing else { return }
