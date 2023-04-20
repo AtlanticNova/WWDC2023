@@ -27,12 +27,9 @@ let package = Package(
                 .phone
             ],
             supportedInterfaceOrientations: [
-                .portrait,
-                .landscapeRight,
-                .landscapeLeft,
-                .portraitUpsideDown(.when(deviceFamilies: [.pad]))
+                .portrait
             ],
-            appCategory: .kidsGames
+            appCategory: .music
         )
     ],
     targets: [

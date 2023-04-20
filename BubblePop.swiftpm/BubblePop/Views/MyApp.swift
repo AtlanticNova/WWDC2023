@@ -2,9 +2,12 @@ import SwiftUI
 
 @main
 struct MyApp: App {
+    @StateObject var audio = Audio()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContentView()
+                .environmentObject(audio)
         }
     }
 }
